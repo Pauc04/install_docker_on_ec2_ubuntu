@@ -1,0 +1,9 @@
+#!/bin/bash
+#prueba
+
+sudo groupadd docker
+sudo usermod -aG docker ubuntu
+newgrp docker
+newgrp docker
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
